@@ -1,0 +1,10 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: prod
+nodes:
+  - role: control-plane
+    # add port mapping to localhost on 9090 to allow traffic redirection
+    extraPortMappings:
+      - containerPort: 30080
+        hostPort: 9090
+        protocol: TCP

@@ -1,0 +1,8 @@
+controller:
+  service:
+    type: ${controller_service_type}
+    nodePorts:
+      http: 30080 # fixed nodeport to allow traffic redirection with kind.
+      https: 30443
+  ingressClassResource:
+    default: true

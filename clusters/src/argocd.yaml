@@ -1,0 +1,9 @@
+global:
+  domain: localhost # can be reached through localhost:8080/
+configs:
+  params:
+    server.insecure: true
+server:
+  ingress:
+    enabled: true
+    ingressClassName: nginx
