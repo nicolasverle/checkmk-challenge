@@ -3,7 +3,7 @@
 # ---------------------------
 variable "cluster_name" {
   description = "Name of the cluster to use"
-  type = string
+  type        = string
 }
 
 # ---------------------------
@@ -22,13 +22,13 @@ variable "argocd_namespace" {
 variable "argocd_chart_version" {
   description = "Version of the ArgoCD Helm chart"
   type        = string
-  default = "7.8.27"
+  default     = "7.8.27"
 }
 
 variable "argocd_values_file" {
   description = "Path to ArgoCD values YAML file"
   type        = list(string)
-  default = []
+  default     = []
 }
 
 # ---------------------------
@@ -47,7 +47,7 @@ variable "nginx_namespace" {
 variable "nginx_chart_version" {
   description = "Version of the NGINX ingress Helm chart"
   type        = string
-  default = "4.12.1"
+  default     = "4.12.1"
 }
 
 variable "nginx_service_type" {
